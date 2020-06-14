@@ -20,7 +20,7 @@
     position: 'bottom',
     perPageDropdown: [3, 7, 9],
     dropdownAllowAll: false,
-    setCurrentPage: 2,
+    setCurrentPage: 1,
     nextLabel: 'next',
     prevLabel: 'prev',
     rowsPerPageLabel: 'Rows per page',

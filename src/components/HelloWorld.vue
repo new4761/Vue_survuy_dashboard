@@ -45,16 +45,24 @@ export default {
       {
         label: "ลำดับ",
         field: "ลำดับ",
-        sortable: true,
-       
+        sortable: true
+      },
+      {
+        label: "ชุดเเบบสอบถาม",
+        field: "ชุดเเบบสอบถาม",
+        sortable: true
       },
 
       {
         label: "คำถามเเบบตัวเลือกสเกล",
         field: "คำถามเเบบตัวเลือกสเกล",
-         width: '150px'
+        width: "150px"
       },
-      { label: "คำถามเเบบตัวเลือก", field: "คำถามเเบบตัวเลือก", width: '150px' },
+      {
+        label: "คำถามเเบบตัวเลือก",
+        field: "คำถามเเบบตัวเลือก",
+        width: "150px"
+      },
       {
         label: "ความยากง่ายในการตอบคำถาม",
         field: "ความยากง่ายในการตอบคำถาม"
@@ -82,6 +90,7 @@ export default {
         response.data.data.forEach(element => {
           this.info.push({
             ลำดับ: element.id,
+            ชุดเเบบสอบถาม: element.formID,
             เวลาที่ตอบ: element.date_created,
             ความยากง่ายในการตอบคำถาม: element.Vote_answer[0],
             การสะท้อนความเป็นจริง: element.Vote_answer[1],

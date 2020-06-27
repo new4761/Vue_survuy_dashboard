@@ -85,7 +85,7 @@ export default {
     item: []
   }),
   mounted() {
-    Axios.get("http://mathsurveykmitl.cu.ma/apis/getAllData.php/").then(
+    Axios.get("http://mathsurveykmitl.cu.ma/apis/getAllData.php",{ rejectUnauthorized: false}).then(
       response =>
         response.data.data.forEach(element => {
           this.info.push({

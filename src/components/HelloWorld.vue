@@ -85,7 +85,7 @@ export default {
     item: []
   }),
   mounted() {
-    Axios.get("https://webserv.kmitl.ac.th/new4761/apis/getAllData.php").then(
+    Axios.get("http://mathsurveykmitl.cu.ma/apis/getAllData.php").then(
       response =>
         response.data.data.forEach(element => {
           this.info.push({

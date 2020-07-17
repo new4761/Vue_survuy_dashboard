@@ -1,11 +1,10 @@
 <template>
   <div class="hello">
-    <download-excel
+    <download-csv
       class="btn btn-default myButton"
       :data="info"
-      type="csv"
-      name="survey.xls"
-    >Download .csv</download-excel>
+      name="survey.csv"
+    >Download.csv</download-csv>
 
     <div>
       <vue-good-table
@@ -81,7 +80,18 @@ export default {
         sortable: true
       }
     ],
+
     info: [],
+
+    json_meta: [
+      [
+        {
+          key: "charset",
+          value: "utf-8"
+        }
+      ]
+    ],
+
     item: []
   }),
   mounted() {
